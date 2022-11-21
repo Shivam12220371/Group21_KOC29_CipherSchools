@@ -1,0 +1,27 @@
+# python 3 program find the maximum number of pieces
+# By given number of cuts
+
+# Function for finding Maximum Pieces
+# With n Cuts
+
+def findMaximumPieces(n):
+
+  # To maximum no of pieces
+  # X is the horizontal cuts
+
+  x = n // 2
+
+  # Now (x) is the horizontal cuts
+  # and (n-x) is vertical cuts, then
+  # Maximum number of pieces = (x+1)*(n-x+1)
+
+  return ((x+1) * (n - x + 1))
+
+# Driver code
+if __name__ == "__main__":
+
+  # Taking a maximum number of cuts allowed as 3
+  n = 3
+
+  # Finding and Printing the Maximum number of Pieces
+  print("Max number of pieces for n = " +str( n) +" is " + str(findMaximumPieces(3)))
